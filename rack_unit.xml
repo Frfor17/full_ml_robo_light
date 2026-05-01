@@ -1,0 +1,61 @@
+<!-- rack_unit.xml -->
+<body name="rack">
+    <!-- пол -->
+    <geom name="floor" type="plane" size="20 10 0.1" rgba="0.9 0.9 0.9 1"/>
+
+    <!-- ПОЛКИ -->
+    <!-- нижняя полка (длинная) -->
+    <geom name="shelf_bottom" type="box"
+          pos="0 0 0.5" size="3.0 0.5 0.02" rgba="0.6 0.4 0.2 1"/>
+
+    <!-- верхняя полка (длинная) -->
+    <geom name="shelf_top" type="box"
+          pos="0 0 1.0" size="3.0 0.5 0.02" rgba="0.6 0.4 0.2 1"/>
+
+    <!-- крыша полка (длинная) -->
+    <geom name="shelf_upper_top" type="box"
+          pos="0 0 1.5" size="3.0 0.5 0.02" rgba="0.6 0.4 0.2 1"/>
+
+    <!-- 8 стойк, держащих полки -->
+
+    <!-- Передний ряд стоек (держат передний край полок) -->
+    <geom name="front_post_1" type="box"
+          pos="-3.0  0.5 0.25" size="0.05 0.05 0.25" rgba="0.4 0.4 0.4 1"/>
+    <geom name="front_post_2" type="box"
+          pos="-1.0  0.5 0.25" size="0.05 0.05 0.25" rgba="0.4 0.4 0.4 1"/>
+    <geom name="front_post_3" type="box"
+          pos=" 1.0  0.5 0.25" size="0.05 0.05 0.25" rgba="0.4 0.4 0.4 1"/>
+    <geom name="front_post_4" type="box"
+          pos=" 3.0  0.5 0.25" size="0.05 0.05 0.25" rgba="0.4 0.4 0.4 1"/>
+
+    <!-- Задний ряд стоек (держат задний край полок) -->
+    <geom name="back_post_1" type="box"
+          pos="-3.0  -0.5 0.25" size="0.05 0.05 0.25" rgba="0.4 0.4 0.4 1"/>
+    <geom name="back_post_2" type="box"
+          pos="-1.0  -0.5 0.25" size="0.05 0.05 0.25" rgba="0.4 0.4 0.4 1"/>
+    <geom name="back_post_3" type="box"
+          pos=" 1.0  -0.5 0.25" size="0.05 0.05 0.25" rgba="0.4 0.4 0.4 1"/>
+    <geom name="back_post_4" type="box"
+          pos=" 3.0  -0.5 0.25" size="0.05 0.05 0.25" rgba="0.4 0.4 0.4 1"/>
+
+    <!-- ВЕРХНИЕ стойки, которые держат верхнюю полку (они потолще и выше) -->
+    <!-- передний ряд, верх -->
+    <geom name="front_post_1_upper" type="box"
+          pos="-3.0  0.5 0.75" size="0.05 0.05 0.75" rgba="0.3 0.3 0.3 1"/>
+    <geom name="front_post_2_upper" type="box"
+          pos="-1.0  0.5 0.75" size="0.05 0.05 0.75" rgba="0.3 0.3 0.3 1"/>
+    <geom name="front_post_3_upper" type="box"
+          pos=" 1.0  0.5 0.75" size="0.05 0.05 0.75" rgba="0.3 0.3 0.3 1"/>
+    <geom name="front_post_4_upper" type="box"
+          pos=" 3.0  0.5 0.75" size="0.05 0.05 0.75" rgba="0.3 0.3 0.3 1"/>
+
+    <!-- задний ряд, верх -->
+    <geom name="back_post_1_upper" type="box"
+          pos="-3.0  -0.5 0.75" size="0.05 0.05 0.75" rgba="0.3 0.3 0.3 1"/>
+    <geom name="back_post_2_upper" type="box"
+          pos="-1.0  -0.5 0.75" size="0.05 0.05 0.75" rgba="0.3 0.3 0.3 1"/>
+    <geom name="back_post_3_upper" type="box"
+          pos=" 1.0  -0.5 0.75" size="0.05 0.05 0.75" rgba="0.3 0.3 0.3 1"/>
+    <geom name="back_post_4_upper" type="box"
+          pos=" 3.0  -0.5 0.75" size="0.05 0.05 0.75" rgba="0.3 0.3 0.3 1"/>
+</body>

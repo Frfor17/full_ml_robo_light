@@ -3,7 +3,7 @@ import mujoco.viewer
 import os
 
 # Указываем путь к XML относительно текущей папки
-model_path = "warehouse_ver2.xml"
+model_path = "warehouse_ver3.xml"
 
 # Проверяем, что файл существует
 if not os.path.exists(model_path):

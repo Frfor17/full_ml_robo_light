@@ -1,0 +1,17 @@
+<mujoco model="full_warehouse">
+  <worldbody>
+    <geom name="floor" type="plane" size="50 30 0.1" rgba="0.9 0.9 0.9 1"/>
+
+    <!-- включаем готовый стеллаж -->
+    <include file="rack_unit.xml"/>
+
+    <!-- можно несколько копий, чуть сдвинутых -->
+    <body name="rack_2" pos="8 0 0">
+      <include file="rack_unit.xml"/>
+    </body>
+
+    <body name="rack_3" pos="16 0 0">
+      <include file="rack_unit.xml"/>
+    </body>
+  </worldbody>
+</mujoco>
