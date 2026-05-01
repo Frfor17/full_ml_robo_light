@@ -1,0 +1,55 @@
+<mujoco model="warehouse">
+  <!-- визуальные настройки -->
+  <visual>
+    <global glow="0.4"/>
+  </visual>
+
+  <!-- свет сверху -->
+  <option>
+    <flag gravity="enable"/>
+  </option>
+  <worldbody>
+    <light name="top_light" pos="0 0 6" directional="false" diffuse="0.8 0.8 0.8"/>
+
+    <!-- пол -->
+    <geom name="floor" type="plane" size="30 20 0.1" rgba="0.9 0.9 0.9 1"/>
+
+    <!-- внешние стены -->
+    <geom name="wall_north" type="box" pos="0 20 1" size="30 0.1 1" rgba="0.2 0.2 0.2 1"/>
+    <geom name="wall_south" type="box" pos="0 -20 1" size="30 0.1 1" rgba="0.2 0.2 0.2 1"/>
+    <geom name="wall_west"  type="box" pos="-30 0 1" size="0.1 20 1" rgba="0.2 0.2 0.2 1"/>
+    <geom name="wall_east"  type="box" pos="30 0 1" size="0.1 20 1" rgba="0.2 0.2 0.2 1"/>
+
+    <!-- Стеллажи: 3 ряда, по 4 стеллажа в каждом -->
+    <!-- ряд 1 -->
+    <geom name="rack_1_1" type="box" pos="-20 -10 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_1_2" type="box" pos="-20  -7 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_1_3" type="box" pos="-20  -4 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_1_4" type="box" pos="-20  -1 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+
+    <!-- ряд 2 -->
+    <geom name="rack_2_1" type="box" pos="-10 -10 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_2_2" type="box" pos="-10  -7 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_2_3" type="box" pos="-10  -4 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_2_4" type="box" pos="-10  -1 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+
+    <!-- ряд 3 -->
+    <geom name="rack_3_1" type="box" pos="0   -10 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_3_2" type="box" pos="0    -7 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_3_3" type="box" pos="0    -4 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_3_4" type="box" pos="0    -1 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+
+    <!-- вторая часть стеллажей (симметрия относительно центра) -->
+    <!-- ряд 4 -->
+    <geom name="rack_4_1" type="box" pos="10 -10 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_4_2" type="box" pos="10  -7 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_4_3" type="box" pos="10  -4 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_4_4" type="box" pos="10  -1 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+
+    <!-- ряд 5 -->
+    <geom name="rack_5_1" type="box" pos="20 -10 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_5_2" type="box" pos="20  -7 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_5_3" type="box" pos="20  -4 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+    <geom name="rack_5_4" type="box" pos="20  -1 1" size="0.5 3 1" rgba="0.6 0.4 0.2 1"/>
+  </worldbody>
+</mujoco>
